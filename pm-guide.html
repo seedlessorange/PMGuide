@@ -84,6 +84,7 @@
                     <span class="font-bold text-xl tracking-tight text-stone-800">Future PM <span class="text-stone-500 font-light">| 2026</span></span>
                 </div>
                 <div class="hidden lg:flex space-x-4">
+                    <button onclick="scrollToSection('pm-role')" class="nav-item text-stone-600 hover:text-amber-600 px-2 py-2 text-sm font-medium transition-colors">PM Role</button>
                     <button onclick="scrollToSection('market')" class="nav-item text-stone-600 hover:text-amber-600 px-2 py-2 text-sm font-medium transition-colors">Market</button>
                     <button onclick="scrollToSection('day-in-life')" class="nav-item text-stone-600 hover:text-amber-600 px-2 py-2 text-sm font-medium transition-colors">Day in Life</button>
                     <button onclick="scrollToSection('skills')" class="nav-item text-stone-600 hover:text-amber-600 px-2 py-2 text-sm font-medium transition-colors">Skills</button>
@@ -102,6 +103,7 @@
         </div>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-stone-200 py-4 px-4 space-y-2">
+            <button onclick="scrollToSection('pm-role')" class="block w-full text-left px-4 py-2 text-stone-600 hover:bg-stone-50 rounded">PM Role</button>
             <button onclick="scrollToSection('market')" class="block w-full text-left px-4 py-2 text-stone-600 hover:bg-stone-50 rounded">Market Reality</button>
             <button onclick="scrollToSection('day-in-life')" class="block w-full text-left px-4 py-2 text-stone-600 hover:bg-stone-50 rounded">Day in Life</button>
             <button onclick="scrollToSection('skills')" class="block w-full text-left px-4 py-2 text-stone-600 hover:bg-stone-50 rounded">Skills</button>
@@ -185,8 +187,115 @@
             </div>
         </section>
 
+        <!-- Section: Understanding the PM Role -->
+        <section id="pm-role" class="py-16 bg-white border-t border-stone-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-base text-amber-600 font-semibold tracking-wide uppercase">Start Here</h2>
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-stone-900 sm:text-4xl">
+                        Understanding the Product Manager Role
+                    </p>
+                    <p class="mt-4 max-w-3xl text-xl text-stone-500 mx-auto">
+                        Product management unites business, tech development, design, marketing, and sales. It starts with an idea and ends with evaluating the product's success.
+                    </p>
+                </div>
+
+                <!-- PM Role Dimensions -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    <div class="bg-amber-50 rounded-xl p-6 border border-amber-200">
+                        <div class="w-10 h-10 bg-amber-500 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-bullseye text-white"></i>
+                        </div>
+                        <h3 class="font-bold text-stone-900 mb-2">Core Question</h3>
+                        <p class="text-stone-600 text-sm">"What problem are we solving and for whom?"</p>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-6 border border-blue-200">
+                        <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-list-check text-white"></i>
+                        </div>
+                        <h3 class="font-bold text-stone-900 mb-2">Responsibilities</h3>
+                        <p class="text-stone-600 text-sm">Understand customer needs, define roadmap, prioritize features, align stakeholders</p>
+                    </div>
+                    <div class="bg-green-50 rounded-xl p-6 border border-green-200">
+                        <div class="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-calendar-day text-white"></i>
+                        </div>
+                        <h3 class="font-bold text-stone-900 mb-2">Daily Work</h3>
+                        <p class="text-stone-600 text-sm">User interviews, writing PRDs, prioritization discussions, alignment meetings with eng & design</p>
+                    </div>
+                    <div class="bg-purple-50 rounded-xl p-6 border border-purple-200">
+                        <div class="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-chart-line text-white"></i>
+                        </div>
+                        <h3 class="font-bold text-stone-900 mb-2">Performance Measured By</h3>
+                        <p class="text-stone-600 text-sm">Product impact (revenue, adoption, engagement), customer satisfaction</p>
+                    </div>
+                </div>
+
+                <!-- Who Hires PMs -->
+                <div class="bg-stone-50 rounded-2xl p-8 border border-stone-200">
+                    <h3 class="font-bold text-xl text-stone-900 mb-6">
+                        <i class="fa-solid fa-building mr-2 text-amber-600"></i>Who Hires Product Managers?
+                    </h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b border-stone-300">
+                                    <th class="text-left py-3 px-3 font-semibold text-amber-700">Company Type</th>
+                                    <th class="text-left py-3 px-3 font-semibold text-stone-700">Example Employers</th>
+                                    <th class="text-left py-3 px-3 font-semibold text-stone-700">PM Focus Area</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-stone-200 text-stone-600">
+                                <tr class="hover:bg-white">
+                                    <td class="py-3 px-3 font-medium text-stone-900">Big Tech / Consumer</td>
+                                    <td class="py-3 px-3">Google, Meta, Amazon, Microsoft, Apple</td>
+                                    <td class="py-3 px-3">Platform, consumer products, ecosystem strategy</td>
+                                </tr>
+                                <tr class="hover:bg-white">
+                                    <td class="py-3 px-3 font-medium text-stone-900">Fintechs & Neobanks</td>
+                                    <td class="py-3 px-3">Revolut, N26, Wise, Stripe, Checkout.com</td>
+                                    <td class="py-3 px-3">Payments, onboarding, risk & compliance, growth</td>
+                                </tr>
+                                <tr class="hover:bg-white">
+                                    <td class="py-3 px-3 font-medium text-stone-900">Startups / Scaleups</td>
+                                    <td class="py-3 px-3">Notion, Miro, Typeform, Algolia</td>
+                                    <td class="py-3 px-3">Rapid iteration, product-market fit, user feedback</td>
+                                </tr>
+                                <tr class="hover:bg-white">
+                                    <td class="py-3 px-3 font-medium text-stone-900">Consulting (Digital)</td>
+                                    <td class="py-3 px-3">McKinsey Digital, BCG X, Accenture Song</td>
+                                    <td class="py-3 px-3">Product strategy, client-facing digital transformation</td>
+                                </tr>
+                                <tr class="hover:bg-white">
+                                    <td class="py-3 px-3 font-medium text-stone-900">Traditional Going Digital</td>
+                                    <td class="py-3 px-3">L'Oréal, Decathlon, BNP Paribas</td>
+                                    <td class="py-3 px-3">Internal tools, e-commerce, innovation programs</td>
+                                </tr>
+                                <tr class="hover:bg-white">
+                                    <td class="py-3 px-3 font-medium text-stone-900">SaaS / B2B</td>
+                                    <td class="py-3 px-3">Salesforce, HubSpot, ServiceNow</td>
+                                    <td class="py-3 px-3">Enterprise PM, integrations, APIs</td>
+                                </tr>
+                                <tr class="hover:bg-white">
+                                    <td class="py-3 px-3 font-medium text-stone-900">Gaming / Entertainment</td>
+                                    <td class="py-3 px-3">Spotify, Netflix</td>
+                                    <td class="py-3 px-3">Engagement metrics, recommendations, monetization</td>
+                                </tr>
+                                <tr class="hover:bg-white">
+                                    <td class="py-3 px-3 font-medium text-stone-900">Hardware & IoT</td>
+                                    <td class="py-3 px-3">Tesla, Dyson, Samsung</td>
+                                    <td class="py-3 px-3">UX for physical + digital, connected devices</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Section: Market Reality Check -->
-        <section id="market" class="py-16 bg-white border-t border-stone-200">
+        <section id="market" class="py-16 bg-[#FDFBF7] border-t border-stone-200">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-base text-amber-600 font-semibold tracking-wide uppercase">Let's Be Real</h2>
@@ -2614,6 +2723,50 @@
                     </div>
                     <div class="mt-6 p-4 bg-amber-100 rounded-lg border border-amber-200">
                         <p class="text-sm text-amber-700"><i class="fa-solid fa-lightbulb mr-2"></i><strong>Pro tip:</strong> Keep each case study to 1-2 pages max. Hiring managers skim. Lead with impact, then details.</p>
+                    </div>
+                </div>
+
+                <!-- Demonstrate Product Mindset -->
+                <div class="mt-12 bg-green-50 rounded-2xl p-8 border border-green-200">
+                    <h3 class="text-xl font-bold text-green-900 mb-4"><i class="fa-solid fa-brain mr-2"></i>Demonstrate a Product Mindset</h3>
+                    <p class="text-green-800 mb-6">A "product mindset" shows you focus on users, prioritize impact over output, think about trade-offs, and communicate in metrics and outcomes.</p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white rounded-xl p-5 border border-green-200">
+                            <h4 class="font-semibold text-stone-800 mb-3">How to Reframe Your Experience</h4>
+                            <div class="space-y-3 text-sm">
+                                <div class="flex items-start gap-3">
+                                    <i class="fa-solid fa-xmark text-red-500 mt-1"></i>
+                                    <span class="text-stone-500">"Built dashboards for the marketing team"</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fa-solid fa-check text-green-600 mt-1"></i>
+                                    <span class="text-stone-700">"Enabled data-driven decision-making by identifying key metrics to track campaign effectiveness"</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl p-5 border border-green-200">
+                            <h4 class="font-semibold text-stone-800 mb-3">What to Highlight</h4>
+                            <ul class="text-sm text-stone-600 space-y-2">
+                                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-600 mt-1"></i>How you used data or experimentation</li>
+                                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-600 mt-1"></i>Customer feedback that shaped decisions</li>
+                                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-600 mt-1"></i>Curiosity about <em>why</em> decisions were made</li>
+                                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-600 mt-1"></i>Trade-offs you navigated (time, scope, quality)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Resources -->
+                <div class="mt-8 bg-stone-100 rounded-xl p-6 border border-stone-200">
+                    <h4 class="font-semibold text-stone-800 mb-4"><i class="fa-solid fa-link mr-2 text-amber-600"></i>Portfolio Building Resources</h4>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://hellopm.co/product-manager-portfolio-guide" target="_blank" class="px-4 py-2 bg-white rounded-lg text-sm text-stone-700 border border-stone-200 hover:border-amber-500 transition-all">
+                            <i class="fa-solid fa-book mr-2 text-amber-600"></i>HelloPM Portfolio Guide
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=oTcJ5LrJMMM" target="_blank" class="px-4 py-2 bg-white rounded-lg text-sm text-stone-700 border border-stone-200 hover:border-amber-500 transition-all">
+                            <i class="fa-brands fa-youtube mr-2 text-red-600"></i>PM Portfolio Walkthrough
+                        </a>
                     </div>
                 </div>
             </div>
@@ -6210,6 +6363,9 @@
             // AI PM Resources (new)
             { title: "AI PM Guide by Aakash", author: "Aakash Gupta", type: "course", tier: "AI PM", desc: "How to position yourself as an AI Product Manager." },
             { title: "Claude Code for PMs", author: "ccforpms.com", type: "course", tier: "AI PM", url: "https://ccforpms.com/getting-started/introduction", desc: "Learn vibe coding: use AI to automate PM workflows (PRDs, tickets, research). 5-10 hours saved weekly." },
+            { title: "AI PM Playlist", author: "Aakash Gupta", type: "course", tier: "AI PM", desc: "YouTube series on becoming an AI Product Manager." },
+            // YouTube Channels
+            { title: "GrowProduct", author: "GrowProduct", type: "course", tier: "Podcast", desc: "Product growth strategies and PM career advice." },
             // Communities
             { title: "Product School Slack", author: "Product School", type: "community", tier: "Community", desc: "100K+ members. Global PM community." },
             { title: "French Producers", author: "French CPO", type: "community", tier: "Community", desc: "The hub for the French PM community." },
